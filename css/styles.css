@@ -147,11 +147,12 @@ img {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;   
+    background-size: cover; 
+    max-width: 1440px;
 }
 
 .hero-container {
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 .hero-title {
@@ -316,15 +317,11 @@ img {
 .team-icon-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 32px;
+    align-items: center;    
     gap: 24px;
 }
 
-.team-icon-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.team-icon-border {    
     width: 40px;
     height: 40px;
     border-radius: 50%;   
@@ -335,7 +332,7 @@ img {
 .team-icon-link {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     border-radius: 50%;
     background-color: #4D5AE5;
     width: 100%;
@@ -345,16 +342,13 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-border:hover,
 .team-icon-link:hover,
-.team-icon-border:focus,
 .team-icon-link:focus {
     background-color: #404BBF;
 }
 
 .team-list-icon {
     fill:#F4F4FD;
-
 }
 
 /**==============*/
@@ -396,7 +390,7 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item:hover .portfolio-card-wrapper {
+.portfolio-list-item:hover {
     transform: translateY(0%);
 }
 
@@ -407,20 +401,19 @@ img {
 
 .portfolio-list-img {}
 
-.portfolio-card-wrapper{
+.portfolio-cover-text{
     position: absolute;
     top: 0;
-    background: #4D5AE5;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-cover-text{
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 40px 32px;
+    background: #4D5AE5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wrapper {
@@ -462,9 +455,6 @@ img {
 
 .footer-wrapper {
     display: flex;
-}
-
-.footer-info {
     margin-right: 120px;
 }
 
@@ -524,7 +514,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-link {
+.footer-list-icon {
     fill: #f4f4fd;
 }
 
