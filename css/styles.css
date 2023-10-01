@@ -311,6 +311,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-icon-wrapper{
@@ -318,6 +319,7 @@ img {
     justify-content: center;
     align-items: center;    
     gap: 24px;
+    list-style: none;
 }
 
 .team-icon-border {    
@@ -389,7 +391,7 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover .portfolio-cover-text{
     transform: translateY(0%);
 }
 
@@ -454,9 +456,11 @@ img {
 
 .footer-wrapper {
     display: flex;
+    /* margin-right: 120px; */
+}
+.footer-info-wrapper{
     margin-right: 120px;
 }
-
 .footer-logo {
     display: inline-block;
     color: #4D5AE5;
